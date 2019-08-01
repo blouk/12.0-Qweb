@@ -12,6 +12,16 @@
     'installable': True,
     'data': [
 
+
+    #assets
+    'views/assets.xml',
+
+    #layout
+    'views/layout.xml',
+
+    #pages
+    'views/page/example_page.xml',
+
     ],
     'application': True,
 }
