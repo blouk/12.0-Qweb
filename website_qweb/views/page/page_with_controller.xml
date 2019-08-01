@@ -9,6 +9,8 @@
                     <div class="container">
                         <h1 class="mt32">Page With Controller</h1>
                         <h2>My Variable:<t t-esc="variable"/></h2>
+                        <hr/>
+                        <t t-raw="contacts"/>
                     </div>
                 </div>
             </div>

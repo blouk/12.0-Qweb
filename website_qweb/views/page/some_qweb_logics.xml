@@ -8,22 +8,33 @@
                 <div class="oe_structure">
                     <div class="container">
                         <h1 class="mt32">Some Qweb Logics</h1>
-                        <h2 class="mt16">Loop</h2>
+                        <h2 class="mt16">Loop, Variables &amp; conditions</h2>
                         <p>Let's loop over res.partner object and diplay the name &amp; the picture</p>
+
+                        <!-- declare in QWEB some variables -->
+                        <t t-set="name_of_variable_string" t-value="'value of variable'"/>
+                        <t t-set="name_of_variable_array" t-value="[1,2,3]"/>
+                        <t t-set="name_of_variable_dict" t-value="{'var':1,'var2':2}"/>
+                        <!-- display them in the template -->
+
                         <t t-set="contacts" t-value="request.env['res.partner'].sudo().search([],order='name')"/>
+
                         <div class="row">
                             <t t-foreach="contacts" t-as="contact">
                                 <div class="col-3">
-                                    <h5 t-esc="contact.name"/>
-                                    <img t-attf-src="/website/image/res.partner/{{contact.id}}/image/"/>
-                                    <br/>
+                                    <!-- if id of contact == 14, smaller fonts -->
+                                    <t t-if="contact.id == 14">
+                                        <h5 t-esc="contact.name"/>
+                                    </t>
+                                    <!-- else bigger fonts -->
+                                    <t t-else="1">
+                                        <h3 t-esc="contact.name"/>
+                                    </t>
+                                    <img t-attf-src="/website/image/res.partner/{{contact.id}}/image/50x50"/>
                                 </div>
                             </t>
                         </div>
 
-                        <h2 class="mt16">Conditions</h2>
-                        <h2 class="mt16">Variables</h2>
-                        <h2 class="mt16">Groups</h2>
                     </div>
                 </div>
             </div>

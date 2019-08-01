@@ -1,8 +1,15 @@
 #wrapwrap {
     #wrap {
         border: 1px solid red;
+        
+        h1 {
+            font-size: 80px;
+
+        }
     }
 }
+
+
 //animation
 .pinkBg {
     background-color: #ed184f!important;
@@ -14,7 +21,7 @@
     width: 20px;
     position: relative;
     transform: translate(0,50%);
-    
+
     text-align: center;
     margin: -10px 0 0 -10px;
     border-radius: 20px;
