@@ -5,7 +5,6 @@
         <h1>without_odoo_context</h1>
         <h2>You have nothing!!</h2>
         <p>(not even boostrap, jquery, header ... nothing 😓 )</p>
-
     </template>
 
     <data noupdate="1">

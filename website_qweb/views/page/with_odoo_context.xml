@@ -15,6 +15,15 @@
         </t>
     </template>
 
+    <template id="with_odoo_context_inherit" inherit_id="website_qweb.with_odoo_context">
+        <xpath expr="//h1" position="after">
+            <h2>Coming from an inherited view</h2>
+        </xpath>
+        <xpath expr="//h1" position="attributes">
+            <attribute name="class">mt32 my-class-name</attribute>
+        </xpath>
+    </template>
+
     <data noupdate="1">
         <record id="with_odoo_context_page" model="website.page">
             <field name="website_published">True</field>
