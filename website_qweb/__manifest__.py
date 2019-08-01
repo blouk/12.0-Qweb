@@ -12,6 +12,8 @@
     'installable': True,
     'data': [
 
+    #website menu
+    'data/menu.xml',
 
     #assets
     'views/assets.xml',

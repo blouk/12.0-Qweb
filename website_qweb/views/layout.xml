@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+    <!-- we change the main layout -->
+    <!-- Add an animated dot in front of the main menu -->
+    <template id="layout" inherit_id="website.layout" priority="20">
+        <xpath expr="//t[@t-as='submenu']" position="before">
+            <a href="#" class="intro-banner-vdo-play-btn pinkBg" target="_blank">
+                <i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
+                <span class="ripple pinkBg"></span>
+                <span class="ripple pinkBg"></span>
+                <span class="ripple pinkBg"></span>
+            </a>
+        </xpath>
+    </template>
 </odoo>
