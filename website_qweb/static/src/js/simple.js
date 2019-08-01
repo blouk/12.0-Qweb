@@ -3,7 +3,7 @@ odoo.define('website_qweb.simpleJS', function(require) {
 
     require('web.dom_ready');
     // add your javascript here.
-    alert('DOM.READY');
+    console.log('DOM.READY');
 
 
 });

@@ -7,7 +7,7 @@
     'version': '1.0',
     'description': "",
     'depends': [
-        'website',
+        'website','website_crm',
     ],
     'installable': True,
     'data': [
@@ -22,8 +22,10 @@
     'views/layout.xml',
 
     #pages
-    'views/page/example_page.xml',
-
+    'views/page/without_odoo_context.xml',
+    'views/page/with_odoo_context.xml',
+    'views/page/some_qweb_logics.xml',
+    'views/page/page_with_controller.xml',
     ],
     'application': True,
 }

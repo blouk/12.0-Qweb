@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="page_with_controller">
+        <t name="Page With Controller"/>
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1 class="mt32">Page With Controller</h1>
+                        <h2>My Variable:<t t-esc="variable"/></h2>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

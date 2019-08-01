@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="some_qweb_logics">
+        <t name="Some Qweb Logics"/>
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1 class="mt32">Some Qweb Logics</h1>
+                        <h2 class="mt16">Loop</h2>
+                        <p>Let's loop over res.partner object and diplay the name &amp; the picture</p>
+                        <t t-set="contacts" t-value="request.env['res.partner'].sudo().search([],order='name')"/>
+                        <div class="row">
+                            <t t-foreach="contacts" t-as="contact">
+                                <div class="col-3">
+                                    <h5 t-esc="contact.name"/>
+                                    <img t-attf-src="/website/image/res.partner/{{contact.id}}/image/"/>
+                                    <br/>
+                                </div>
+                            </t>
+                        </div>
+
+                        <h2 class="mt16">Conditions</h2>
+                        <h2 class="mt16">Variables</h2>
+                        <h2 class="mt16">Groups</h2>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <data noupdate="1">
+        <record id="some_qweb_logics_page" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/some_qweb_logics</field>
+            <field name="view_id" ref="some_qweb_logics"/>
+        </record>
+    </data>
+
+</odoo>
