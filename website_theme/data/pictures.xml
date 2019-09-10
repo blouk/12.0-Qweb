@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="website_theme.beatles_01" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="datas_fname">beatles_01.jpg</field>
+        <field name="type">url</field>
+        <field name="url">/website_theme/static/src/img/beatles_01.jpg</field>
+    </record>
+
+    <record id="website_theme.beatles_02" model="ir.attachment">
+        <field name="public" eval="True"/>
+        <field name="datas_fname">beatles_02.jpg</field>
+        <field name="type">url</field>
+        <field name="url">/website_theme/static/src/img/beatles_02.jpg</field>
+    </record>
+
+</odoo>
