@@ -1,43 +1,19 @@
 $o-theme-font-size-base: .92rem;
 $-palettes: (
     (
-        'alpha': rgba(184, 162, 139, 1),
-        'beta':rgba(155, 153, 121, 1),
-        'gamma': rgba(107, 99, 89, 1),
-        'delta': rgba(69, 64, 76, 1),
-        'epsilon':rgba(43, 50, 68, 1),
-        //
-        // 'primary': rgba(59, 31, 43, 1),
-        // 'secondary':rgba(219, 22, 47, 1),
-        // 'success':  rgba(219, 223, 172, 1),
-        // 'info': rgba(95, 117, 142, 1),
-        // 'warning':rgba(56, 57, 97, 1),
-        // 'danger': rgba(80 ,8 ,18, 1),
-        //
-        // 'text': rgba(0,255,0,1),
-        // 'menu': #1b557a,
-        // 'footer': #164666,
-
+        'alpha':        #F3F2F7,
+        'beta':         #A2CEE5,
+        'gamma':        #7484A7,
+        'delta':        #599AF4,
+        'epsilon':      #3D7FDE,
     ),
 
     (
-    'alpha': rgba(184, 162, 139, .5),
-    'beta':rgba(155, 153, 121, .5),
-    'gamma': rgba(107, 99, 89, .5),
-    'delta': rgba(69, 64, 76, .5),
-    'epsilon':rgba(43, 50, 68, .5),
-
-        // 'primary': lighten(rgba(59, 31, 43, 1),40%),
-        // 'secondary':lighten(rgba(219, 22, 47, 1),40%),
-        // 'success':  lighten(rgba(219, 223, 172, 1),40%),
-        // 'info': lighten(rgba(95, 117, 142, 1),40%),
-        // 'warning':lighten(rgba(56, 57, 97, 1),40%),
-        // 'danger': lighten(rgba(80 ,8 ,18, 1),40%),
-        //
-        // 'text': lighten(rgba(0,255,0,1),40%),
-        // 'menu': #1b557a,
-        // 'footer': #164666,
-
+        'alpha':        #EB795B,
+        'beta':         #5E4A5C,
+        'gamma':        #8B545C,
+        'delta':        #8D3C2E,
+        'epsilon':      #131B25,
     ),
 
 );
@@ -46,20 +22,26 @@ $o-theme-color-palettes: ();
 
 @each $-palette in $-palettes {
     $o-theme-color-palettes: append($o-theme-color-palettes, map-merge($-palette, (
-        'primary': map-get($-palette, 'alpha'),
-        'secondary': map-get($-palette, 'beta'),
-        'success': map-get($-palette, 'gamma'),
-        'warning': map-get($-palette, 'delta'),
-        'danger' : map-get($-palette, 'epsilon'),
+        'primary':      map-get($-palette, 'alpha'),
+        'secondary':    map-get($-palette, 'beta'),
+        'success':      map-get($-palette, 'gamma'),
+        'warning':      map-get($-palette, 'delta'),
+        'danger' :      map-get($-palette, 'epsilon'),
     )));
 }
 
 $o-color-palettes: ();
 @each $-palette in $o-theme-color-palettes {
     $o-color-palettes: append($o-color-palettes, (
-        'menu':  map-get($-palette, 'delta'),
-        'footer': map-get($-palette, 'delta'),
-        'text': map-get($-palette, 'delta'),
+        'body':         map-get($-palette, 'alpha'),
+        'menu':         map-get($-palette, 'delta'),
+        'footer':       map-get($-palette, 'delta'),
+        'text':         map-get($-palette, 'delta'),
+        'h1':           map-get($-palette, 'gamma'),
+        'h2':           map-get($-palette, 'gamma'),
+        'h3':           map-get($-palette, 'gamma'),
+        'h4':           map-get($-palette, 'gamma'),
+        'h5':           map-get($-palette, 'gamma'),
     ));
 }
 

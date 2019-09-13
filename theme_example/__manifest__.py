@@ -18,6 +18,7 @@
 
     #assets
     'views/assets.xml',
+    'views/options.xml',
 
     #layout
 
