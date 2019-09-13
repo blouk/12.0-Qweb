@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <content id="theme_customize_content_colors" string="Colors" title="Choose the theme colors">
+            <opt data-xmlid="" data-color-palette="user" string="Choose your colors"/>
+        </content>
+    </template>
+</odoo>

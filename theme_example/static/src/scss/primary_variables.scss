@@ -1,0 +1,93 @@
+$o-theme-font-size-base: .92rem;
+$-palettes: (
+    (
+        'alpha': rgba(184, 162, 139, 1),
+        'beta':rgba(155, 153, 121, 1),
+        'gamma': rgba(107, 99, 89, 1),
+        'delta': rgba(69, 64, 76, 1),
+        'epsilon':rgba(43, 50, 68, 1),
+        //
+        // 'primary': rgba(59, 31, 43, 1),
+        // 'secondary':rgba(219, 22, 47, 1),
+        // 'success':  rgba(219, 223, 172, 1),
+        // 'info': rgba(95, 117, 142, 1),
+        // 'warning':rgba(56, 57, 97, 1),
+        // 'danger': rgba(80 ,8 ,18, 1),
+        //
+        // 'text': rgba(0,255,0,1),
+        // 'menu': #1b557a,
+        // 'footer': #164666,
+
+    ),
+
+    (
+    'alpha': rgba(184, 162, 139, .5),
+    'beta':rgba(155, 153, 121, .5),
+    'gamma': rgba(107, 99, 89, .5),
+    'delta': rgba(69, 64, 76, .5),
+    'epsilon':rgba(43, 50, 68, .5),
+
+        // 'primary': lighten(rgba(59, 31, 43, 1),40%),
+        // 'secondary':lighten(rgba(219, 22, 47, 1),40%),
+        // 'success':  lighten(rgba(219, 223, 172, 1),40%),
+        // 'info': lighten(rgba(95, 117, 142, 1),40%),
+        // 'warning':lighten(rgba(56, 57, 97, 1),40%),
+        // 'danger': lighten(rgba(80 ,8 ,18, 1),40%),
+        //
+        // 'text': lighten(rgba(0,255,0,1),40%),
+        // 'menu': #1b557a,
+        // 'footer': #164666,
+
+    ),
+
+);
+
+$o-theme-color-palettes: ();
+
+@each $-palette in $-palettes {
+    $o-theme-color-palettes: append($o-theme-color-palettes, map-merge($-palette, (
+        'primary': map-get($-palette, 'alpha'),
+        'secondary': map-get($-palette, 'beta'),
+        'success': map-get($-palette, 'gamma'),
+        'warning': map-get($-palette, 'delta'),
+        'danger' : map-get($-palette, 'epsilon'),
+    )));
+}
+
+$o-color-palettes: ();
+@each $-palette in $o-theme-color-palettes {
+    $o-color-palettes: append($o-color-palettes, (
+        'menu':  map-get($-palette, 'delta'),
+        'footer': map-get($-palette, 'delta'),
+        'text': map-get($-palette, 'delta'),
+    ));
+}
+
+
+
+$o-theme-fonts: (
+    ('Lato', sans-serif),
+    ('Raleway', sans-serif),
+    ('Helvetica', 'Arial', sans-serif),
+    ('Abril Fatface', cursive),
+    ('Alfa Slab One', cursive),
+    ('Arvo', serif),
+);
+
+$o-theme-font-urls: (
+    'Lato:400,400i,700,700i',
+    'Raleway:400,400i,700,700i',
+    null,
+    'Abril+Fatface',
+    'Alfa+Slab+One',
+    'Arvo:400,400i,700,700i',
+);
+
+$o-theme-font-names: (
+    'Lato',
+    'Raleway',
+    'Helvetica',
+    'Abril',
+    'Alfa Slab One',
+    'Arvo',
+);
