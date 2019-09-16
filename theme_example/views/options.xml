@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="avantgarde_colorpicker_pattern" inherit_id="web_editor.colorpicker">
+    <template id="theme_example_colorpicker_pattern" inherit_id="web_editor.colorpicker">
+        
         <xpath expr="//colorpicker/div[@data-name='theme']/button[@data-color='alpha']" position="after">
             <button class="o_small" data-color="alpha-lighter"/>
             <button class="o_small" data-color="alpha-darker"/>

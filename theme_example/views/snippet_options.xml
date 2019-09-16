@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_example_option_color" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-selector="p,span,h1,h2,h3,h4,h5" >
+                <div class="dropdown-submenu">
+                    <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-font"/>Colors cycle</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="#" class="dropdown-item" data-select-class="s_cc_fast">Fast</a>
+                        <a href="#" class="dropdown-item" data-select-class="s_cc_medium">Medium</a>
+                        <a href="#" class="dropdown-item" data-select-class="s_cc_slow">Slow</a>
+                        <div class="dropdown-divider"/>
+                        <a href="#" class="dropdown-item" data-select-class="s_cc_default">Default</a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
