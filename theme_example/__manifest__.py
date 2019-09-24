@@ -15,6 +15,7 @@
 
     #data
     'data/pictures.xml',
+    'data/menu.xml',
 
     #assets
     'views/assets.xml',
@@ -24,6 +25,7 @@
     #layout
 
     #pages
+    'views/page/form.xml',
     ],
     'application': True,
 }

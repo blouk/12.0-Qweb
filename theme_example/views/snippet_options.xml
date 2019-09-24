@@ -2,7 +2,7 @@
 <odoo>
     <template id="theme_example_option_color" inherit_id="website.snippet_options">
         <xpath expr="." position="inside">
-            <div data-selector="p,span,h1,h2,h3,h4,h5" >
+            <div data-selector="p,span,h1,h2,h3,h4,h5" data-js="ccFx">
                 <div class="dropdown-submenu">
                     <a tabindex="-2" href="#" class="dropdown-item"><i class="fa fa-font"/>Colors cycle</a>
                     <div class="dropdown-menu" role="menu">

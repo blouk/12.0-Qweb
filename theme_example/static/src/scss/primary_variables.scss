@@ -1,5 +1,13 @@
 $o-theme-font-size-base: .92rem;
 $-palettes: (
+(
+    'alpha':        #EB795B,
+    'beta':         #5E4A5C,
+    'gamma':        #8B545C,
+    'delta':        #8D3C2E,
+    'epsilon':      #131B25,
+),
+
     (
         'alpha':        #F3F2F7,
         'beta':         #A2CEE5,
@@ -8,13 +16,6 @@ $-palettes: (
         'epsilon':      #3D7FDE,
     ),
 
-    (
-        'alpha':        #EB795B,
-        'beta':         #5E4A5C,
-        'gamma':        #8B545C,
-        'delta':        #8D3C2E,
-        'epsilon':      #131B25,
-    ),
 
 );
 
@@ -37,11 +38,11 @@ $o-color-palettes: ();
         'menu':         map-get($-palette, 'delta'),
         'footer':       map-get($-palette, 'delta'),
         'text':         map-get($-palette, 'delta'),
-        'h1':           map-get($-palette, 'gamma'),
+        'h1':           map-get($-palette, 'beta'),
         'h2':           map-get($-palette, 'gamma'),
         'h3':           map-get($-palette, 'gamma'),
         'h4':           map-get($-palette, 'gamma'),
-        'h5':           map-get($-palette, 'gamma'),
+        'h5':           map-get($-palette, 'beta'),
     ));
 }
 
