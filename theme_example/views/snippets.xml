@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="s_title" name="Title">
+      <section class="pt32 pb32">
+          <div class="container">
+              <div class="row">
+                
+              </div>
+          </div>
+      </section>
+  </template>
+</odoo>
