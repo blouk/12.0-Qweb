@@ -20,6 +20,7 @@
     #assets
     'views/assets.xml',
     'views/options.xml',
+    'views/snippets.xml',
     'views/snippet_options.xml',
 
     #layout
