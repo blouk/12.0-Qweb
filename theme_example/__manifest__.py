@@ -6,7 +6,7 @@
     'summary': 'A simple Theme example ',
     'version': '1.0',
     'description': "",
-    'depends': ['theme_common'],
+    'depends': ['website','website_theme_install'],
     'images': [
         'static/description/website_theme_screenshot.jpg',
     ],
