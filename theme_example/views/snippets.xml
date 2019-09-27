@@ -22,7 +22,6 @@
                 </ul>
             </div>
         </section>
-
     </template>
 
     <template id="snippets_3d" inherit_id="website.snippets">
@@ -38,6 +37,5 @@
                 </div>
             </div>
         </xpath>
-
     </template>
 </odoo>
