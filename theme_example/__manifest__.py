@@ -17,14 +17,16 @@
     'data/pictures.xml',
     'data/menu.xml',
 
-    #layout
-    'views/custom_modal.xml',
 
     #assets
     'views/assets.xml',
     'views/options.xml',
     'views/snippets.xml',
     'views/snippet_options.xml',
+
+    #layout
+    'views/custom_modal.xml',
+
 
     #pages
     'views/page/form.xml',
