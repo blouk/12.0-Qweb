@@ -1,13 +1,12 @@
 $o-theme-font-size-base: .92rem;
 $-palettes: (
-(
-    'alpha':        #EB795B,
-    'beta':         #5E4A5C,
-    'gamma':        #8B545C,
-    'delta':        #8D3C2E,
-    'epsilon':      #131B25,
-),
-
+    (
+        'alpha':        #EB795B,
+        'beta':         #5E4A5C,
+        'gamma':        #8B545C,
+        'delta':        #8D3C2E,
+        'epsilon':      #131B25,
+    ),
     (
         'alpha':        #F3F2F7,
         'beta':         #A2CEE5,
@@ -15,8 +14,6 @@ $-palettes: (
         'delta':        #599AF4,
         'epsilon':      #3D7FDE,
     ),
-
-
 );
 
 $o-theme-color-palettes: ();
@@ -55,6 +52,7 @@ $o-theme-fonts: (
     ('Abril Fatface', cursive),
     ('Alfa Slab One', cursive),
     ('Arvo', serif),
+    ('Mansalva',cursive),
 );
 
 $o-theme-font-urls: (
@@ -64,6 +62,7 @@ $o-theme-font-urls: (
     'Abril+Fatface',
     'Alfa+Slab+One',
     'Arvo:400,400i,700,700i',
+    'Mansalva',
 );
 
 $o-theme-font-names: (
@@ -73,4 +72,5 @@ $o-theme-font-names: (
     'Abril',
     'Alfa Slab One',
     'Arvo',
+    'Mansalva',
 );

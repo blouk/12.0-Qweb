@@ -12,14 +12,12 @@
     </xpath>
   </template>
 
-  <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers" priority="1">
-    <!-- <xpath expr="//link[last()]" position="after"> <link rel="stylesheet" type="text/scss" href="/theme_clean/static/src/scss/bootstrap_overridden.scss"/> </xpath> -->
-  </template>
 
   <template id="assets_frontend" inherit_id="website.assets_frontend" priority="1">
     <xpath expr="//link[last()]" position="after">
       <link rel="stylesheet" type="text/scss" href="/theme_example/static/src/scss/option/s_container_3d.scss"/>
       <link rel="stylesheet" type="text/scss" href="/theme_example/static/src/scss/option/s_cc.scss"/>
+      <link rel="stylesheet" type="text/scss" href="/theme_example/static/src/scss/option/theme.scss"/>
     </xpath>
     <xpath expr="//script[last()]" position="after">
       <script type="text/javascript" src="/theme_example/static/lib/three.js"/>

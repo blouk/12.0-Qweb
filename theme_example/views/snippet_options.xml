@@ -14,6 +14,19 @@
                     </div>
                 </div>
             </div>
+
+            <div data-selector=".my-class" >
+                <div class="dropdown-submenu">
+                    <a tabindex="0" href="#" class="dropdown-item"><i class="fa fa-font"/>My option</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="#" class="dropdown-item" data-select-class="s_cc_newclass_op1">Option 1</a>
+                        <a href="#" class="dropdown-item" data-select-class="s_cc_newclass_op2">Option 2</a>
+
+                    </div>
+                </div>
+            </div>
+
+
         </xpath>
     </template>
 </odoo>
