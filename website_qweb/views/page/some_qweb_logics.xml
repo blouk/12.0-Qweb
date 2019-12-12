@@ -14,27 +14,35 @@
                         <!-- declare in QWEB some variables -->
                         <t t-set="name_of_variable_string" t-value="'value of variable'"/>
                         <t t-set="name_of_variable_array" t-value="[1,2,3]"/>
-                        <t t-set="name_of_variable_dict" t-value="{'var':1,'var2':2}"/>
+
                         <!-- display them in the template -->
 
-                        <t t-set="contacts" t-value="request.env['res.partner'].sudo().search([],order='name')"/>
+                        <h1 t-esc="name_of_variable_string"/>
 
-                        <div class="row">
-                            <t t-foreach="contacts" t-as="contact">
-                                <div class="col-3">
-                                    <!-- if id of contact == 14, smaller fonts -->
-                                    <t t-if="contact.id == 14">
-                                        <h5 t-esc="contact.name"/>
-                                    </t>
-                                    <!-- else bigger fonts -->
-                                    <t t-else="1">
-                                        <h3 t-esc="contact.name"/>
-                                    </t>
-                                    <img t-attf-src="/website/image/res.partner/{{contact.id}}/image/50x50"/>
-                                </div>
+                        <hr/>
+                        <t t-foreach="name_of_variable_array" t-as="var">
+                            <h2 t-esc="var"/>
+
+                        </t>
+                        <hr/>
+
+                        <t t-foreach="name_of_variable_array" t-as="var">
+
+                            <t t-if="var == 1">
+                                <h3 t-esc="var"/>
                             </t>
-                        </div>
-
+                            <t t-else="">
+                                <h4 t-esc="var"/>
+                            </t>
+                        </t>
+                            <hr/>
+                        <!-- create q query directly in Qweb -->
+                        <t t-set="contacts" t-value="request.env['res.partner'].sudo().search([],order='name')"/>
+                        <ul>
+                            <li t-foreach="contacts" t-as="contact">
+                                <t t-esc="contact"/>|<t t-esc="contact.name"/>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
