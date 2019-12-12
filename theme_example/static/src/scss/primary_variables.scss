@@ -1,4 +1,4 @@
-$o-theme-font-size-base: .92rem;
+$o-theme-font-size-base: 2rem;
 $-palettes: (
     (
         'alpha':        #EB795B,
@@ -45,32 +45,28 @@ $o-color-palettes: ();
 
 
 
+
 $o-theme-fonts: (
+    ('SinkinSans', sans-serif),
+    ('Rajdhani', sans-serif),
+    ('Roboto', sans-serif),
+    ('Source Sans Pro', sans-serif),
+    ('Ubuntu', sans-serif),
     ('Lato', sans-serif),
-    ('Raleway', sans-serif),
-    ('Helvetica', 'Arial', sans-serif),
-    ('Abril Fatface', cursive),
-    ('Alfa Slab One', cursive),
-    ('Arvo', serif),
-    ('Mansalva',cursive),
 );
-
 $o-theme-font-urls: (
-    'Lato:400,400i,700,700i',
-    'Raleway:400,400i,700,700i',
     null,
-    'Abril+Fatface',
-    'Alfa+Slab+One',
-    'Arvo:400,400i,700,700i',
-    'Mansalva',
+    'Rajdhani:400,700',
+    'Roboto:400,400i,700,700i',
+    'Source+Sans+Pro:400,400i,700,700i',
+    'Ubuntu:300,300i,400,400i,500,500i,700,700i',
+    'Lato:400,400i,700,700i',
 );
-
 $o-theme-font-names: (
+    'Sinkin',
+    'Rajdhani',
+    'Roboto',
+    'Source Sans Pro',
+    'Ubuntu',
     'Lato',
-    'Raleway',
-    'Helvetica',
-    'Abril',
-    'Alfa Slab One',
-    'Arvo',
-    'Mansalva',
 );
