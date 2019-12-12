@@ -8,7 +8,10 @@
                 <div class="oe_structure">
                     <div class="container">
                         <h1 class="mt32">With Odoo Context</h1>
-                        <h2 class="mt16">You have everything you need 🤘 ☠ <i class="fab fa-acquisitions-incorporated"></i></h2>
+                        <h2 class="mt16">You have everything you need 🤘 ☠
+                            <i class="fab fa-acquisitions-incorporated"></i>
+                            <i class="fab fa-researchgate"></i>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -21,6 +24,12 @@
         </xpath>
         <xpath expr="//h1" position="attributes">
             <attribute name="class">mt32 my-class-name</attribute>
+        </xpath>
+    </template>
+
+    <template id="exaddon_option_Blog" name="Exaddon option Blog" inherit_id="website_blog.opt_blog_cover_post" active="False" customize_show="True">
+        <xpath expr="//div[hasclass('container')][1]" position="before">
+            <h1 style="position:absolute;index:1500">Exaddon H1 blog option</h1>
         </xpath>
     </template>
 

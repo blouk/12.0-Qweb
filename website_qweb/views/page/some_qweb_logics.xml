@@ -20,14 +20,13 @@
                         <h1 t-esc="name_of_variable_string"/>
 
                         <hr/>
+
                         <t t-foreach="name_of_variable_array" t-as="var">
                             <h2 t-esc="var"/>
-
                         </t>
                         <hr/>
 
                         <t t-foreach="name_of_variable_array" t-as="var">
-
                             <t t-if="var == 1">
                                 <h3 t-esc="var"/>
                             </t>
@@ -35,7 +34,16 @@
                                 <h4 t-esc="var"/>
                             </t>
                         </t>
-                            <hr/>
+                        <hr/>
+
+
+                        <!-- request -->
+                        <t t-set="url_param" t-value="request.params.get('url_var')"/>
+                        <t t-if="url_param">
+                            <h1>My Variables: <span t-esc="url_param"/></h1>
+                        </t>
+
+
                         <!-- create q query directly in Qweb -->
                         <t t-set="contacts" t-value="request.env['res.partner'].sudo().search([],order='name')"/>
                         <ul>

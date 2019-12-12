@@ -11,6 +11,11 @@
                         <h2>My Variable:<t t-esc="variable"/></h2>
                         <hr/>
                         <t t-raw="contacts"/>
+                        <ul>
+                            <li t-foreach="contacts" t-as="contact">
+                                <span t-esc="contact.name"/>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

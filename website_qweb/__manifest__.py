@@ -7,7 +7,7 @@
     'version': '1.0',
     'description': "",
     'depends': [
-        'website','website_crm',
+        'website','website_crm','website_blog'
     ],
     'installable': True,
     'data': [

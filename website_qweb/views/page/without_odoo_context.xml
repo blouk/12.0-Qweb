@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <template id="without_odoo_context">
         <h1>without_odoo_context</h1>
         <h2>You have nothing!!</h2>
