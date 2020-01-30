@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="simple_page" model="ir.ui.view">
+        <field name="name">Simple Page</field>
+        <field name="type">qweb</field>
+        <field name="key">website_translation.simple_page</field>
+        <field name="arch" type="xml">
+            <t name="Home" priority="29" t-name="website_translation.simple_page">
+                <t t-call="website.layout">
+                    <t t-set="pageName" t-value="'Simple Page'"/>
+                    <div class="container">
+                        <h1>Title</h1>
+                        <h2>Title 2</h2>
+                        <p>
+                            Paragraph
+                        </p>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="simple_page_page" model="website.page">
+        <field name="website_published">True</field>
+        <field name="url">/simple_page</field>
+        <field name="name">Simple Page</field>
+        <field name="view_id" ref="simple_page"/>
+    </record>
+
+</odoo>

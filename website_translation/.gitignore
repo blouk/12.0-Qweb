@@ -1,0 +1,6 @@
+*.py[cod]
+.project
+.ropeproject
+.pydevproject
+.settings
+*.zip
